@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Formları</title>
+    <link rel="stylesheet" href="style.css">
+</head><link rel="stylesheet" href="style.css">
+
+<body>
+
+<nav>
+  <a href="index.html">Ana Sayfa</a> |
+  <a href="yapisi.html">HTML Yapısı</a> |
+  <a href="etiketler.html">Etiketler</a> |
+  <a href="form.html">Formlar</a> |
+  <a href="tablo.html">Tablolar</a> |
+  <a href="imagemap.html">Image Map</a> |
+  <a href="multimedya.html">Multimedya</a>
+</nav>
+
+<h1>HTML Formları</h1>
+
+<p>HTML ile form oluşturmak, kullanıcıdan veri almak için yaygın bir yöntemdir. İşte en yaygın form elemanlarının kullanımı:</p>
+
+<h2>Form Başlangıcı: &lt;form&gt;</h2>
+<p>Bir form, <code>&lt;form&gt;</code> etiketi ile başlar ve <code>&lt;/form&gt;</code> etiketi ile biter. Form, kullanıcılardan veri toplamak için kullanılır.</p>
+
+<pre>
+&lt;form action="sunucu_url" method="POST"&gt;
+  <!-- Form elemanları burada yer alır -->
+&lt;/form&gt;
+</pre>
+
+<h2>Form Elemanları</h2>
+
+<ul>
+    <li><strong>&lt;input&gt;</strong>: Metin, şifre, buton gibi öğeler oluşturmak için kullanılır.</li>
+    <li><strong>&lt;textarea&gt;</strong>: Çok satırlı metin girişi yapmak için kullanılır.</li>
+    <li><strong>&lt;select&gt; ve &lt;option&gt;</strong>: Açılır menü oluşturmak için kullanılır.</li>
+    <li><strong>&lt;button&gt;</strong>: Formu göndermek için buton oluşturur.</li>
+</ul>
+
+<h3>Örnek: Basit Bir İletişim Formu</h3>
+
+<pre>
+&lt;form action="gonder.php" method="POST"&gt;
+  &lt;label for="isim"&gt;Adınız:&lt;/label&gt;
+  &lt;input type="text" id="isim" name="isim" required&gt;&lt;br&gt;
+  
+  &lt;label for="email"&gt;E-posta:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;
+  
+  &lt;label for="mesaj"&gt;Mesajınız:&lt;/label&gt;
+  &lt;textarea id="mesaj" name="mesaj" rows="4" required&gt;&lt;/textarea&gt;&lt;br&gt;
+  
+  &lt;button type="submit"&gt;Gönder&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+
+<h2>Not:</h2>
+<p>Formlar, <code>action</code> özelliği ile verinin nereye gönderileceğini belirtir. <code>method</code> özelliği ise verinin hangi yöntemle gönderileceğini belirler (genellikle <code>GET</code> veya <code>POST</code> kullanılır).</p>
+
+</body>
+</html>
