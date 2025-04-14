@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Yapısı</title>
+    <link rel="stylesheet" href="style.css">
+</head><link rel="stylesheet" href="style.css">
+
+<body>
+
+<nav>
+  <a href="index.html">Ana Sayfa</a> |
+  <a href="yapisi.html">HTML Yapısı</a> |
+  <a href="etiketler.html">Etiketler</a> |
+  <a href="form.html">Formlar</a> |
+  <a href="tablo.html">Tablolar</a> |
+  <a href="imagemap.html">Image Map</a> |
+  <a href="multimedya.html">Multimedya</a>
+</nav>
+
+<h1>HTML Yapısı</h1>
+
+<p>HTML, web sayfalarının yapısını oluşturmak için kullanılan temel işaretleme dilidir. HTML, etiketler (tags) kullanarak içerikleri belirler ve tarayıcılara bu içeriğin nasıl görüntülenmesi gerektiğini söyler.</p>
+
+<h2>1. HTML Belgelerinin Yapısı</h2>
+
+<p>Bir HTML belgesi temel olarak 5 ana bölümden oluşur:</p>
+
+<ol>
+  <li><strong>&lt;!DOCTYPE html&gt;</strong>: Bu etiket, belgenin HTML5 standardında olduğunu belirtir.</li>
+  <li><strong>&lt;html&gt;</strong>: HTML belgesinin başlangıcını belirtir.</li>
+  <li><strong>&lt;head&gt;</strong>: Sayfanın başlık, karakter seti, stil dosyaları gibi meta verilerini barındırır.</li>
+  <li><strong>&lt;body&gt;</strong>: Sayfanın içeriği burada yer alır. Tüm görsel ve yazılı içerik bu bölümde bulunur.</li>
+  <li><strong>&lt;/html&gt;</strong>: HTML belgesinin sonunu belirtir.</li>
+</ol>
+
+<p>HTML belgesinin temel yapısı şu şekildedir:</p>
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="tr"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;HTML Yapısı&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;HTML Yapısı&lt;/h1&gt;
+        &lt;p&gt;HTML belgesinin temel yapısını burada anlatacağız.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<h2>2. HTML Etiketleri</h2>
+
+<p>HTML, metni, görselleri, bağlantıları ve diğer öğeleri etiketlerle düzenler. Bu etiketler açılış ve kapanış etiketleri olarak gelir. Örneğin, bir başlık etiketi şuna benzer:</p>
+
+<pre>
+&lt;h1&gt;Bu bir başlıktır&lt;/h1&gt;
+</pre>
+
+<p>Etiketler içeriklerin düzenlenmesini ve sayfa üzerinde nasıl görüneceğini belirler. En yaygın HTML etiketlerinden bazıları:</p>
+
+<ul>
+  <li><strong>&lt;p&gt;</strong>: Paragraf</li>
+  <li><strong>&lt;h1&gt; - &lt;h6&gt;</strong>: Başlıklar (h1 en büyük, h6 en küçük)</li>
+  <li><strong>&lt;a&gt;</strong>: Bağlantı</li>
+  <li><strong>&lt;img&gt;</strong>: Resim</li>
+  <li><strong>&lt;ul&gt;</strong>: Sırasız liste</li>
+  <li><strong>&lt;li&gt;</strong>: Liste elemanı</li>
+</ul>
+
+<h2>3. HTML Başlıkları (&lt;h1&gt; - &lt;h6&gt;)</h2>
+
+<p>HTML başlıkları, sayfanın ana başlığından alt başlıklara kadar çeşitli başlık seviyelerini belirtmek için kullanılır. Başlık etiketi sayfa içeriğinde önemli bir yer tutar. İşte örnekler:</p>
+
+<pre>
+&lt;h1&gt;Bu en büyük başlıktır&lt;/h1&gt;
+&lt;h2&gt;Bu bir alt başlıktır&lt;/h2&gt;
+&lt;h3&gt;Bu daha küçük bir başlıktır&lt;/h3&gt;
+&lt;h4&gt;Bu da bir başlıktır, fakat daha küçük&lt;/h4&gt;
+</pre>
+
+<h2>4. HTML Paragrafları (&lt;p&gt;)</h2>
+
+<p>Paragraflar, metinleri bölümlere ayırmak için kullanılır. Paragraf etiketi şuna benzer:</p>
+
+<pre>
+&lt;p&gt;Bu, bir paragraftır. İçerik burada bulunur ve paragraflar sayfa üzerinde metinleri daha düzenli hale getirir.&lt;/p&gt;
+</pre>
+
+<h2>5. HTML Bağlantıları (&lt;a&gt;)</h2>
+
+<p>Bağlantılar, kullanıcıları başka sayfalara veya internet üzerindeki başka kaynaklara yönlendiren öğelerdir. Bağlantı etiketi şu şekilde kullanılır:</p>
+
+<pre>
+&lt;a href="https://www.example.com"&gt;Bu bir bağlantıdır&lt;/a&gt;
+</pre>
+
+<p>Bağlantıdaki <code>href</code> özniteliği, gidilecek adresi belirtir. Ayrıca <code>target="_blank"</code> ekleyerek bağlantıyı yeni bir sekmede açabilirsiniz.</p>
+
+<h2>6. HTML Resimleri (&lt;img&gt;)</h2>
+
+<p>Resimler, sayfada görsel içerik eklemek için kullanılır. Resim etiketi şu şekilde yazılır:</p>
+
+<pre>
+&lt;img src="resim.jpg" alt="Açıklama"&gt;
+</pre>
+
+<p>Burada <code>src</code>, resmin dosya yolunu belirtirken, <code>alt</code>, resim görüntülenemediğinde görünen alternatif metni tanımlar.</p>
+
+<h2>Sonuç</h2>
+
+<p>HTML, temel olarak metin ve görselleri düzenlememize yardımcı olan güçlü bir işaretleme dilidir. HTML belgesinin doğru bir yapıda oluşturulması, web sayfalarının düzgün görüntülenmesini sağlar. Başlıklar, paragraflar, bağlantılar ve görseller gibi temel etiketler, sayfa yapısının temel taşlarını oluşturur.</p>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Image Map</title>
+    <link rel="stylesheet" href="style.css">
+</head><link rel="stylesheet" href="style.css">
+
+<body>
+
+<nav>
+  <a href="index.html">Ana Sayfa</a> |
+  <a href="yapisi.html">HTML Yapısı</a> |
+  <a href="etiketler.html">Etiketler</a> |
+  <a href="form.html">Formlar</a> |
+  <a href="tablo.html">Tablolar</a> |
+  <a href="imagemap.html">Image Map</a> |
+  <a href="multimedya.html">Multimedya</a>
+</nav>
+
+<h1>HTML Image Map</h1>
+
+<p>HTML Image Map, bir resmin farklı bölgelerine tıklanabilir bağlantılar eklemek için kullanılan bir tekniktir. <code>&lt;map&gt;</code> etiketi ile tanımlanır ve her bir bölge <code>&lt;area&gt;</code> etiketiyle belirtilir.</p>
+
+<h2>Image Map Yapısı</h2>
+
+<p>Bir image map oluşturmak için öncelikle bir resim kullanılır, sonra bu resmin üzerine tıklanabilir alanlar eklenir.</p>
+
+<pre>
+&lt;img src="resim.jpg" usemap="#image-map"&gt;
+
+&lt;map name="image-map"&gt;
+  &lt;area shape="rect" coords="34,44,270,350" alt="Bölge1" href="https://www.example.com"&gt;
+  &lt;area shape="circle" coords="400,350,50" alt="Bölge2" href="https://www.example2.com"&gt;
+&lt;/map&gt;
+</pre>
+
+<h2>Örnek: Image Map Kullanımı</h2>
+
+<p>Aşağıda, bir resmin üzerine tıklanabilir bölgeler eklenmiş bir örnek bulunmaktadır:</p>
+
+<img src="https://www.w3schools.com/html/img_girl.jpg" usemap="#girlmap" alt="Girl Image" width="300">
+
+<map name="girlmap">
+  <area shape="rect" coords="34,44,270,350" alt="Bölge1" href="https://www.w3schools.com" target="_blank">
+  <area shape="circle" coords="370,320,50" alt="Bölge2" href="https://www.example.com" target="_blank">
+</map>
+
