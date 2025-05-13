@@ -1,118 +1,109 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts & Icons -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Nedir?</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css" />
 </head>
-<body>
+<body><section class="hero">
+  <div class="hero-content">
+    <h1>HTML Nedir?</h1>
+    <p>Web’in iskeletini oluşturan temel işaretleme diliyle tanışın.</p>
+    <a href="pages/tarihçe.html" class="btn">Tarihçeyi Keşfet</a>
+  </div>
+</section>
 
-<nav>
-  <a href="index.html">Ana Sayfa</a> |
-  <a href="yapisi.html">HTML Yapısı</a> |
-  <a href="etiketler.html">Etiketler</a> |
-  <a href="form.html">Formlar</a> |
-  <a href="tablo.html">Tablolar</a> |
-  <a href="imagemap.html">Image Map</a> |
-  <a href="multimedya.html">Multimedya</a>
-</nav>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="pages/tarihçe.html">Tarihçe</a></li>
+                <li><a href="pages/etiketler.html">Etiketler</a></li>
+                <li><a href="pages/formlar.html">Formlar</a></li>
+                <li><a href="pages/tablolar.html">Tablolar</a></li>
+                <li><a href="pages/img-map.html">Görsel Harita</a></li>
+                <li><a href="pages/uygulama-ornekleri.html">Uygulamalar</a></li>
+                <li><a href="pages/avantajlar.html">Avantajlar</a></li>
+                <li><a href="pages/html-css-js.html">HTML-CSS-JS</a></li>
+                <li><a href="pages/iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h1>HTML Nedir?</h1>
+    <main>
+        <main>
+  <h1>Görsel Harita Örneği</h1>
+  <p>Haritadaki bölgelere tıklayın:</p>
 
-<p>HTML (HyperText Markup Language), web sayfalarını oluşturmak için kullanılan temel işaretleme dilidir. İnternetin temel yapı taşlarından biri olan HTML, tarayıcılar tarafından okunarak görsel bir web sayfasına dönüştürülür.</p>
+  <div class="map-container">
+    <img src="../img/html-map.svg" alt="HTML Haritası" usemap="#harita" width="600">
+    <map name="harita">
+      <area shape="rect" coords="0,0,200,150" href="etiketler.html" alt="Etiketler">
+      <area shape="circle" coords="300,200,75" href="formlar.html" alt="Formlar">
+      <area shape="poly" coords="400,50,550,50,550,200,400,200" href="tablolar.html" alt="Tablolar">
+    </map>
+    <!-- Haritanın kenarına ikonlar ekleyelim -->
+    <div class="map-icons">
+      <img src="../img/etiketler-icon.png" alt="Etiketler İkonu" title="Etiketler Sayfası">
+      <img src="../img/formlar-icon.png" alt="Formlar İkonu" title="Formlar Sayfası">
+      <img src="../img/tablolar-icon.png" alt="Tablolar İkonu" title="Tablolar Sayfası">
+    </div>
+  </div>
+</main>
 
-<h2>📜 HTML’nin Tarihçesi</h2>
+        <main>
+  <section class="intro">
+    <h1>HTML Nedir?</h1>
+    <p>HTML (HyperText Markup Language), web sayfalarının iskeletini oluşturan temel işaretleme dilidir. HTML ile metinler, görseller, bağlantılar, formlar, tablolar ve daha fazlası tanımlanır. İnternetin doğuşundan bu yana sürekli gelişen HTML, günümüzün interaktif ve zengin içerikli web sitelerinin temel yapıtaşıdır.</p>
+    <p>Bu projede, HTML’in tarihçesinden temel etiketlere, ileri seviye uygulamalardan CSS ve JavaScript entegrasyonuna kadar her şeyi bulacaksınız. Hemen aşağıdan başlayın!</p>
+    <a href="pages/tarihçe.html" class="btn">Tarihçeyi İncele</a>
+  </section>
 
-<p>HTML, 1991 yılında **Tim Berners-Lee** tarafından geliştirilmiştir. İnternetin ilk zamanlarında, web sayfaları sadece metin içeriyordu ve bağlantılar (hyperlinks) kullanılarak sayfalar birbirine bağlanabiliyordu. HTML'in ortaya çıkışıyla, web sayfaları görsel olarak daha düzenli ve anlaşılır hale geldi. Günümüzde ise HTML, web tasarımının temel bileşeni olmuştur.</p>
+  <section class="cards">
+    <div class="card">
+      <h2>Temel Etiketler</h2>
+      <p>Başlık, paragraf, bağlantı, liste, resim ve daha fazlasını öğrenin.</p>
+      <a href="pages/etiketler.html" class="btn">Detaylar</a>
+    </div>
+    <div class="card">
+      <h2>Formlar ve Veri</h2>
+      <p>Kullanıcı girişlerini HTML formları ve JavaScript ile nasıl işleriz görelim.</p>
+      <a href="pages/formlar.html" class="btn">Formlara Göz At</a>
+    </div>
+    <div class="card">
+      <h2>CSS &amp; JS Entegrasyonu</h2>
+      <p>Sayfanıza stil ve etkileşim katmak için CSS ve JavaScript uygulama örnekleri.</p>
+      <a href="pages/html-css-js.html" class="btn">Örnekleri Gör</a>
+    </div>
+  </section>
 
-<h2>⚙️ HTML'nin Temel Yapısı</h2>
+  <section class="about">
+    <h2>Neden HTML Öğrenmelisiniz?</h2>
+    <ul>
+      <li>Web geliştirmenin temeli.</li>
+      <li>Mobil ve masaüstü her platformda çalışır.</li>
+      <li>SEO ve erişilebilirlik için kritik.</li>
+      <li>JavaScript ve CSS ile sınırsız kombinasyon.</li>
+    </ul>
+  </section>
+</main>
 
-<p>HTML, etiketler (tags) kullanarak web sayfalarının yapısını oluşturur. Her HTML sayfası temel olarak şu öğelerden oluşur:</p>
+        <h1>HTML Nedir?</h1>
+        <p>HTML, web sayfalarının iskeletini oluşturan temel işaretleme dilidir. Bu sitede HTML hakkında tüm temel bilgileri bulabilirsiniz.</p>
+    </main>
 
-<ul>
-  <li><strong>&lt;!DOCTYPE html&gt;</strong> : HTML5 belgesinin başlatıldığını belirten bir etikettir.</li>
-  <li><strong>&lt;html&gt;</strong> : HTML belgesinin başlangıcını işaret eder.</li>
-  <li><strong>&lt;head&gt;</strong> : Sayfa hakkında meta verileri, stil dosyaları, başlık gibi unsurlar bu etiket içinde yer alır.</li>
-  <li><strong>&lt;body&gt;</strong> : Web sayfasının içerik kısmını barındırır. Sayfadaki metin, resim, bağlantı gibi tüm içerik buradadır.</li>
-</ul>
+    <footer>
+        <p>&copy; WEB TASARIMI VE İNTERNET PROGRAMLAMA ÖDEVİ </p>
+    </footer>
 
-<h3>HTML Belgelerinin Temel Yapısı:</h3>
-<pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="tr"&gt;
-    &lt;head&gt;
-        &lt;meta charset="UTF-8"&gt;
-        &lt;title&gt;HTML Nedir?&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;HTML Nedir?&lt;/h1&gt;
-        &lt;p&gt;HTML, web sayfalarını oluşturmak için kullanılan temel işaretleme dilidir.&lt;/p&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</pre>
-
-<h2>🔑 HTML Etiketleri ve Özellikleri</h2>
-
-<p>HTML, içeriği biçimlendirmek ve sayfada düzen oluşturmak için çeşitli etiketler kullanır. İşte bazı temel HTML etiketleri:</p>
-
-<ul>
-  <li><strong>&lt;p&gt;</strong>: Paragrafları belirtir.</li>
-  <li><strong>&lt;a&gt;</strong>: Bağlantı oluşturur.</li>
-  <li><strong>&lt;h1&gt; - &lt;h6&gt;</strong>: Başlık seviyelerini belirtir.</li>
-  <li><strong>&lt;img&gt;</strong>: Sayfaya görsel ekler.</li>
-  <li><strong>&lt;ul&gt; ve &lt;li&gt;</strong>: Sırasız liste oluşturur.</li>
-</ul>
-
-<h2>🌍 HTML Nerelerde Kullanılır?</h2>
-
-<p>HTML, yalnızca web sayfalarının yapısını belirlemekle kalmaz, aynı zamanda web sitelerinin temel tasarımına da yön verir. HTML, şu alanlarda yaygın olarak kullanılır:</p>
-
-<ul>
-  <li>Web Sayfaları: İnternette gezinirken karşılaştığınız hemen her sayfa HTML ile yapılmıştır.</li>
-  <li>Mobil Uygulama Tasarımı: Bazı mobil uygulamalar da HTML kullanılarak tasarlanabilir.</li>
-  <li>Web Uygulamaları: Çeşitli internet uygulamaları HTML ile yapılmaktadır.</li>
-</ul>
-
-<h2>🔗 HTML ile Etkileşimli Öğeler</h2>
-
-<p>HTML, etkileşimli öğeler eklemek için de kullanılır. Örneğin:</p>
-
-<ul>
-  <li><strong>Formlar:</strong> Kullanıcılardan veri toplamak için HTML form etiketleri kullanılır.</li>
-  <li><strong>Bağlantılar:</strong> Web sayfalarına yönlendiren linkler oluşturulabilir.</li>
-  <li><strong>Tablolar:</strong> Verileri düzenli bir şekilde sunmak için tablolar kullanılır.</li>
-</ul>
-
-<h2>🔄 HTML ve Diğer Teknolojiler</h2>
-
-<p>HTML, sadece metin ve yapıyı tanımlar. Ancak modern web tasarımı için HTML, diğer teknolojilerle birlikte kullanılır:</p>
-
-<ul>
-  <li><strong>CSS (Cascading Style Sheets):</strong> Sayfanın görünümünü düzenler. HTML ile sayfa yapısını belirlerken, CSS ile görsel düzen sağlanır.</li>
-  <li><strong>JavaScript:</strong> Sayfalara etkileşim ve dinamik özellikler ekler. Örneğin, kullanıcı tıklamalarıyla bir şeylerin değişmesi gibi.</li>
-</ul>
-
-<h2>🖼️ HTML Örneği</h2>
-
-<p>İşte basit bir HTML sayfası örneği:</p>
-
-<pre>
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Merhaba Dünya&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Merhaba, bu bir HTML sayfasıdır!&lt;/h1&gt;
-        &lt;p&gt;HTML ile ilgili temel bilgileri bu sayfada öğrenebilirsiniz.&lt;/p&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</pre>
-
-<h2>Sonuç</h2>
-
-<p>HTML, web geliştirme sürecinin temel taşıdır ve her web tasarımcı ve geliştiricisinin bilmesi gereken bir teknolojidir. HTML kullanarak web sayfalarının yapısını ve içeriğini belirleyebilir, CSS ve JavaScript ile sayfanın görünümünü ve işlevselliğini geliştirebilirsiniz.</p>
-
+    <script src="scripts/myscript.js"></script>
 </body>
 </html>
-

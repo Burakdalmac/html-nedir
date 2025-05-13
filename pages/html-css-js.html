@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML - CSS - JS Entegrasyonu</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../index.html">Ana Sayfa</a></li>
+        <li><a href="tarihçe.html">Tarihçe</a></li>
+        <li><a href="etiketler.html">Etiketler</a></li>
+        <li><a href="formlar.html">Formlar</a></li>
+        <li><a href="tablolar.html">Tablolar</a></li>
+        <li><a href="img-map.html">Görsel Harita</a></li>
+        <li><a href="uygulama-ornekleri.html">Uygulamalar</a></li>
+        <li><a href="avantajlar.html">Avantajlar</a></li>
+        <li><a href="html-css-js.html">HTML-CSS-JS</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <main>
+  <h1>HTML + CSS + JS Uyumu</h1>
+  <section>
+    <h2>HTML Yapısı</h2>
+    <p>Sayfanın iskeletini belirler. İçeriği, semantik etiketlerle düzenler.</p>
+  </section>
+  <section>
+    <h2>CSS ile Stil Verme</h2>
+    <p>Renk, düzen, tipografi, responsive davranış için kullanılır.</p>
+  </section>
+  <section>
+    <h2>JS ile Etkileşim</h2>
+    <p>Dinamik içerik, kullanıcı etkileşimi, API çağrıları gibi işlevler ekler.</p>
+  </section>
+  <section class="cards">
+    <div class="card">
+      <div class="card-content">
+        <h2>Kart Stili Değiştirme</h2>
+        <p>Buton tıklayarak arka plan ve renkleri JS ile değiştirdik.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <h2>Validation Örneği</h2>
+        <p>Form alanları JS ile kontrol edilip hata mesajı gösterilir.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+    <h1>HTML, CSS ve JavaScript Entegrasyonu</h1>
+    <p>Bu sayfada HTML, CSS ve JS’in nasıl birlikte çalıştığını basit bir örnekle göreceksiniz.</p>
+
+    <!-- Örnek Kutu -->
+    <div class="kart" id="entegreKart">
+      <h2>Hoş Geldiniz!</h2>
+      <p>Alttaki butona tıklayarak kartın stilini değiştirebilirsiniz.</p>
+      <button id="stilDegistirBtn">Stili Değiştir</button>
+    </div>
+
+    <pre><code>
+&lt;!-- HTML --&gt;
+&lt;div class="kart" id="entegreKart"&gt;
+  &lt;h2&gt;Hoş Geldiniz!&lt;/h2&gt;
+  &lt;p&gt;Alttaki butona tıklayarak stil değiştir.&lt;/p&gt;
+  &lt;button id="stilDegistirBtn"&gt;Stili Değiştir&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS (style.css) --&gt;
+.kart {
+  border: 2px solid #333;
+  padding: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+&lt;!-- JS (myscript.js) --&gt;
+document.getElementById("stilDegistirBtn").addEventListener("click", function() {
+  document.getElementById("entegreKart").style.backgroundColor = "#e0f7fa";
+});
+    </code></pre>
+
+    <p>Butona tıkladığında JavaScript, CSS stilini dinamik olarak değiştirir.</p>
+  </main>
+
+  <footer>
+    <p>&copy; WEB TASARIMI VE İNTERNET PROGRAMLAMA ÖDEVİ</p>
+  </footer>
+
+  <script src="../scripts/myscript.js"></script>
+</body>
+</html>
