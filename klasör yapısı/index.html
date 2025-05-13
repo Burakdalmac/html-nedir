@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- Google Fonts & Icons -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Nedir?</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body><section class="hero">
+  <div class="hero-content">
+    <h1>HTML Nedir?</h1>
+    <p>Web’in iskeletini oluşturan temel işaretleme diliyle tanışın.</p>
+    <a href="pages/tarihçe.html" class="btn">Tarihçeyi Keşfet</a>
+  </div>
+</section>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="pages/tarihçe.html">Tarihçe</a></li>
+                <li><a href="pages/etiketler.html">Etiketler</a></li>
+                <li><a href="pages/formlar.html">Formlar</a></li>
+                <li><a href="pages/tablolar.html">Tablolar</a></li>
+                <li><a href="pages/img-map.html">Görsel Harita</a></li>
+                <li><a href="pages/uygulama-ornekleri.html">Uygulamalar</a></li>
+                <li><a href="pages/avantajlar.html">Avantajlar</a></li>
+                <li><a href="pages/html-css-js.html">HTML-CSS-JS</a></li>
+                <li><a href="pages/iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <main>
+  <h1>Görsel Harita Örneği</h1>
+  <p>Haritadaki bölgelere tıklayın:</p>
+
+  <div class="map-container">
+    <img src="../img/html-map.svg" alt="HTML Haritası" usemap="#harita" width="600">
+    <map name="harita">
+      <area shape="rect" coords="0,0,200,150" href="etiketler.html" alt="Etiketler">
+      <area shape="circle" coords="300,200,75" href="formlar.html" alt="Formlar">
+      <area shape="poly" coords="400,50,550,50,550,200,400,200" href="tablolar.html" alt="Tablolar">
+    </map>
+    <!-- Haritanın kenarına ikonlar ekleyelim -->
+    <div class="map-icons">
+      <img src="../img/etiketler-icon.png" alt="Etiketler İkonu" title="Etiketler Sayfası">
+      <img src="../img/formlar-icon.png" alt="Formlar İkonu" title="Formlar Sayfası">
+      <img src="../img/tablolar-icon.png" alt="Tablolar İkonu" title="Tablolar Sayfası">
+    </div>
+  </div>
+</main>
+
+        <main>
+  <section class="intro">
+    <h1>HTML Nedir?</h1>
+    <p>HTML (HyperText Markup Language), web sayfalarının iskeletini oluşturan temel işaretleme dilidir. HTML ile metinler, görseller, bağlantılar, formlar, tablolar ve daha fazlası tanımlanır. İnternetin doğuşundan bu yana sürekli gelişen HTML, günümüzün interaktif ve zengin içerikli web sitelerinin temel yapıtaşıdır.</p>
+    <p>Bu projede, HTML’in tarihçesinden temel etiketlere, ileri seviye uygulamalardan CSS ve JavaScript entegrasyonuna kadar her şeyi bulacaksınız. Hemen aşağıdan başlayın!</p>
+    <a href="pages/tarihçe.html" class="btn">Tarihçeyi İncele</a>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <h2>Temel Etiketler</h2>
+      <p>Başlık, paragraf, bağlantı, liste, resim ve daha fazlasını öğrenin.</p>
+      <a href="pages/etiketler.html" class="btn">Detaylar</a>
+    </div>
+    <div class="card">
+      <h2>Formlar ve Veri</h2>
+      <p>Kullanıcı girişlerini HTML formları ve JavaScript ile nasıl işleriz görelim.</p>
+      <a href="pages/formlar.html" class="btn">Formlara Göz At</a>
+    </div>
+    <div class="card">
+      <h2>CSS &amp; JS Entegrasyonu</h2>
+      <p>Sayfanıza stil ve etkileşim katmak için CSS ve JavaScript uygulama örnekleri.</p>
+      <a href="pages/html-css-js.html" class="btn">Örnekleri Gör</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>Neden HTML Öğrenmelisiniz?</h2>
+    <ul>
+      <li>Web geliştirmenin temeli.</li>
+      <li>Mobil ve masaüstü her platformda çalışır.</li>
+      <li>SEO ve erişilebilirlik için kritik.</li>
+      <li>JavaScript ve CSS ile sınırsız kombinasyon.</li>
+    </ul>
+  </section>
+</main>
+
+        <h1>HTML Nedir?</h1>
+        <p>HTML, web sayfalarının iskeletini oluşturan temel işaretleme dilidir. Bu sitede HTML hakkında tüm temel bilgileri bulabilirsiniz.</p>
+    </main>
+
+    <footer>
+        <p>&copy; WEB TASARIMI VE İNTERNET PROGRAMLAMA ÖDEVİ </p>
+    </footer>
+
+    <script src="scripts/myscript.js"></script>
+</body>
+</html>

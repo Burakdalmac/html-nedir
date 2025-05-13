@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Etiketleri</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li><a href="tarihçe.html">Tarihçe</a></li>
+                <li><a href="etiketler.html">Etiketler</a></li>
+                <li><a href="formlar.html">Formlar</a></li>
+                <li><a href="tablolar.html">Tablolar</a></li>
+                <li><a href="img-map.html">Görsel Harita</a></li>
+                <li><a href="uygulama-ornekleri.html">Uygulamalar</a></li>
+                <li><a href="avantajlar.html">Avantajlar</a></li>
+                <li><a href="html-css-js.html">HTML-CSS-JS</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <main>
+  <h1>HTML Etiket Rehberi</h1>
+  <p>Aşağıda hem temel hem de ileri düzey etiketlerin kısa açıklamaları ve örnekleri yer alıyor. Öğrenirken kod bloklarını inceleyin, kopyalayın, deneyin!</p>
+
+  <section>
+    <h2>Metin Etiketleri</h2>
+    <ul>
+      <li><strong>&lt;h1&gt;…&lt;/h1&gt;</strong> – Sayfa başlıkları (SEO için kritik).</li>
+      <li><strong>&lt;p&gt;…&lt;/p&gt;</strong> – Paragraflar.</li>
+      <li><strong>&lt;strong&gt; ve &lt;em&gt;</strong> – Vurgulama için kalın ve italik.</li>
+    </ul>
+    <pre><code>&lt;h1&gt;Başlık&lt;/h1&gt;
+&lt;p&gt;Bir paragraf metni.&lt;/p&gt;</code></pre>
+  </section>
+
+  <section>
+    <h2>Liste Etiketleri</h2>
+    <ul>
+      <li><strong>&lt;ul&gt;…&lt;/ul&gt;</strong> – Sırasız liste.</li>
+      <li><strong>&lt;ol&gt;…&lt;/ol&gt;</strong> – Sıralı liste.</li>
+      <li><strong>&lt;li&gt;…&lt;/li&gt;</strong> – Liste elemanı.</li>
+    </ul>
+    <pre><code>&lt;ol&gt;
+  &lt;li&gt;İlk Madde&lt;/li&gt;
+  &lt;li&gt;İkinci Madde&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+  </section>
+
+  <section>
+    <h2>Medya Etiketleri</h2>
+    <ul>
+      <li><strong>&lt;img&gt;</strong> – Görsel ekleme.</li>
+      <li><strong>&lt;audio&gt; &lt;video&gt;</strong> – Ses ve video oynatma.</li>
+    </ul>
+    <pre><code>&lt;img src="img/resim.jpg" alt="Açıklama"&gt;
+&lt;video controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre>
+  </section>
+
+  <section>
+    <h2>Form Etiketleri</h2>
+    <ul>
+      <li>&lt;form&gt;, &lt;input&gt;, &lt;textarea&gt;, &lt;button&gt;</li>
+      <li>&lt;select&gt;, &lt;option&gt;</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Yapısal Etiketler (Semantic)</h2>
+    <ul>
+      <li>&lt;header&gt;, &lt;nav&gt;</li>
+      <li>&lt;section&gt;, &lt;article&gt;, &lt;aside&gt;</li>
+      <li>&lt;footer&gt;</li>
+    </ul>
+  </section>
+</main>
+
+        <h1>HTML'de Sık Kullanılan Etiketler</h1>
+        <p>HTML'de içerik yapılandırmak için birçok etiket kullanılır. Aşağıda temel bazı etiketleri görebilirsiniz:</p>
+
+        <section>
+            <h2>&lt;h1&gt; - &lt;h6&gt;</h2>
+            <p>Başlık etiketleri. h1 en büyük, h6 en küçük başlıktır.</p>
+            <pre><code>&lt;h1&gt;Merhaba HTML&lt;/h1&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>&lt;p&gt;</h2>
+            <p>Paragraf etiketidir, metinleri yazmak için kullanılır.</p>
+            <pre><code>&lt;p&gt;Bu bir paragraftır.&lt;/p&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>&lt;a&gt;</h2>
+            <p>Bağlantı (link) oluşturur.</p>
+            <pre><code>&lt;a href="https://example.com"&gt;Siteye Git&lt;/a&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>&lt;img&gt;</h2>
+            <p>Görsel (resim) eklemek için kullanılır.</p>
+            <pre><code>&lt;img src="img/resim.jpg" alt="Açıklama"&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</h2>
+            <p>Sıralı ve sırasız liste elemanları için kullanılır.</p>
+            <pre><code>
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>&lt;div&gt; ve &lt;span&gt;</h2>
+            <p>Sayfa düzeni için kullanılan yapısal etiketlerdir.</p>
+            <pre><code>&lt;div&gt;Bir kutu&lt;/div&gt;</code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; WEB TASARIMI VE İNTERNET PROGRAMLAMA ÖDEVİ</p>
+    </footer>
+
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html>
