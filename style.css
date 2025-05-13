@@ -1,112 +1,192 @@
-/* Genel yapı */
+/* ---------------------------------------------------
+   1. Genel Değişkenler
+--------------------------------------------------- */
+:root {
+  --primary: #4a90e2;
+  --dark: #1a1a1a;
+  --light: #f9f9f9;
+  --font: 'Poppins', sans-serif;
+  --transition: 0.3s ease;
+}
+
+/* ---------------------------------------------------
+   2. Reset & Base
+--------------------------------------------------- */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f4f8;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  font-family: var(--font);
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+a { text-decoration: none; transition: var(--transition); }
+ul { list-style: none; }
+
+/* ---------------------------------------------------
+   3. Navbar
+--------------------------------------------------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  display: flex; justify-content: space-between; align-items: center;
+  z-index: 1000;
+  transition: background var(--transition);
+}
+.navbar.scrolled {
+  background: var(--primary);
+}
+.navbar a.logo { font-size: 1.5rem; font-weight: 600; color: var(--primary); }
+.navbar ul { display: flex; gap: 1rem; }
+.navbar ul li a {
+  color: var(--dark);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.navbar ul li a:hover {
+  background: var(--primary);
+  color: white;
 }
 
-/* İçerik kutusu */
-.container {
-    max-width: 900px;
-    margin: auto;
-    background-color: #fff;
-    padding: 40px 30px;
-    margin-top: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+/* ---------------------------------------------------
+   4. Hero Bölümü
+--------------------------------------------------- */
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/hero-bg.jpg') center/cover no-repeat;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+  color: white;
+}
+.hero-content h1 {
+  font-size: 3rem; margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.2rem; margin-bottom: 1.5rem;
+  max-width: 600px; margin-left: auto; margin-right: auto;
+}
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.btn:hover {
+  background: darken(var(--primary), 10%);
 }
 
-/* Başlıklar */
-h1, h2, h3 {
-    color: #1a73e8;
-    margin-top: 0;
+/* ---------------------------------------------------
+   5. Ana İçerik Bölümleri
+--------------------------------------------------- */
+main {
+/* Eski (hero overlap için) – BU SATIRI SİLİN */
+/* main {
+  max-width: 1200px;
+  margin: -4rem auto 4rem; 
+  padding: 0 1rem;
+} */
+
+/* Yeni – Tüm sayfalarda tutarlı boşluk veren ayar */
+main {
+  max-width: 1200px;
+  margin: 4rem auto;      /* sayfanın üstünde ve altında 4rem boşluk */
+  padding: 0 1rem;
 }
 
-/* Paragraflar */
-p {
-    line-height: 1.6;
+}
+section {
+  margin-bottom: 3rem;
+}
+section h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
 }
 
-/* Bağlantılar */
-a {
-    color: #1a73e8;
-    text-decoration: none;
+/* Kart düzeni */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform var(--transition);
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%; height: 180px; object-fit: cover;
+}
+.card-content {
+  padding: 1rem;
 }
 
-a:hover {
-    text-decoration: underline;
+/* ---------------------------------------------------
+   6. Formlar, Tablolar, Kod Blokları
+--------------------------------------------------- */
+form {
+  background: white; padding: 2rem; border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
-
-/* Navigasyon */
-.nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
+input, textarea, select {
+  width: 100%; padding: 0.8rem; margin-top: 0.5rem; margin-bottom: 1rem;
+  border: 1px solid #ccc; border-radius: 5px;
 }
-
-.nav a {
-    background-color: #1a73e8;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-weight: bold;
+button {
+  background: var(--primary);
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none; border-radius: 5px;
+  cursor: pointer; font-weight: 600;
 }
-
-.nav a:hover {
-    background-color: #155ab6;
+button:hover {
+  opacity: 0.9;
 }
-
-/* Form alanı */
-form label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 6px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-}
-
-form input[type="submit"] {
-    background-color: #1a73e8;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-    background-color: #155ab6;
-}
-
-/* Tablo */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%; border-collapse: collapse; margin-top: 1.5rem;
 }
-
-table, th, td {
-    border: 1px solid #ccc;
-}
-
 th, td {
-    padding: 12px;
-    text-align: left;
+  padding: 0.8rem; border: 1px solid #ddd;
+}
+th {
+  background: var(--primary); color: white;
+}
+pre {
+  background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 5px;
+  overflow-x: auto;
 }
 
-th {
-    background-color: #1a73e8;
-    color: white;
+/* ---------------------------------------------------
+   7. Footer
+--------------------------------------------------- */
+footer {
+  background: var(--dark);
+  color: #ccc;
+  text-align: center;
+  padding: 2rem 1rem;
 }
+footer p {
+  font-size: 0.9rem;
+}
+
+/* ---------------------------------------------------
+   8. Responsive
+--------------------------------------------------- */
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 2.2rem; }
+  .hero-content p { font-size: 1rem; }
+  .navbar ul { flex-direction: column; align-items: center; }
+}
+

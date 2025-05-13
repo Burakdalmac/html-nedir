@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tabloları</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li><a href="tarihçe.html">Tarihçe</a></li>
+                <li><a href="etiketler.html">Etiketler</a></li>
+                <li><a href="formlar.html">Formlar</a></li>
+                <li><a href="tablolar.html">Tablolar</a></li>
+                <li><a href="img-map.html">Görsel Harita</a></li>
+                <li><a href="uygulama-ornekleri.html">Uygulamalar</a></li>
+                <li><a href="avantajlar.html">Avantajlar</a></li>
+                <li><a href="html-css-js.html">HTML-CSS-JS</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <main>
+  <h1>Tablo Oluşturma Detayları</h1>
+  <p>Tablolar verileri düzenli satır ve sütunlar halinde gösterir. Aşağıdaki örnek üzerinden özellikleri yakından inceleyin.</p>
+
+  <section>
+    <h2>Basit Tablo</h2>
+    <table>
+      <thead>
+        <tr><th>Ürün</th><th>Açıklama</th><th>Fiyat</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Oyuncak</td><td>Ahşap araba</td><td>120₺</td></tr>
+        <tr><td>Kitap</td><td>Çocuk romanı</td><td>45₺</td></tr>
+        <tr><td>Defter</td><td>Çizgili</td><td>15₺</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Hücre Birleştirme</h2>
+    <table>
+      <tr>
+        <th colspan="2">Başlık</th>
+        <th>Fiyat</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Kategori A</td>
+        <td>Madde 1</td><td>100₺</td>
+      </tr>
+      <tr>
+        <td>Madde 2</td><td>150₺</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Tablo Stilleri ve Responsiveness</h2>
+    <p>CSS ile satır renklendirme, hover efektleri ve küçük ekranlarda yatay kaydırma ekleyebilirsiniz.</p>
+  </section>
+</main>
+
+        <h1>HTML ile Tablo Oluşturma</h1>
+        <p>HTML'de verileri düzenli bir şekilde göstermek için tablolar kullanılır. Temel tablo etiketleri:</p>
+
+        <ul>
+            <li><strong>&lt;table&gt;</strong>: Tablonun başlangıcı</li>
+            <li><strong>&lt;tr&gt;</strong>: Satır (table row)</li>
+            <li><strong>&lt;td&gt;</strong>: Hücre (table data)</li>
+            <li><strong>&lt;th&gt;</strong>: Başlık hücresi (table header)</li>
+            <li><strong>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</strong>: Tablo yapısal bölümleri</li>
+        </ul>
+
+        <h2>Örnek Tablo</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Ürün</th>
+                    <th>Fiyat</th>
+                    <th>Stok</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Oyuncak Araba</td>
+                    <td>120 TL</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Yapboz</td>
+                    <td>85 TL</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Peluş Ayı</td>
+                    <td>150 TL</td>
+                    <td>15</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Tablolarda hücreleri birleştirmek için <code>colspan</code> ve <code>rowspan</code> özellikleri de kullanılabilir.</p>
+    </main>
+
+    <footer>
+        <p>&copy; WEB TASARIMI VE İNTERNET PROGRAMLAMA ÖDEVİ</p>
+    </footer>
+
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html>
